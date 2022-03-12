@@ -131,7 +131,7 @@ const main = () => {
     // Scroll Smooth
     const headerHeight = $('header').outerHeight();
 
-    $('.navbar-nav li a').click( (e) => {
+    $('.navbar-nav li a').click( function (e) {
         const targetHref = $(this).attr('href');
 
         $('html, body').animate(
