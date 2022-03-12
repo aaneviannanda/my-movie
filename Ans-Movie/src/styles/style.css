@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* Bagian Footer */
+footer {
+    color: white;
+    background-color: #2d31fa;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    font-weight: bold;
+    color: #00ffdd;
+}
+/* Mobile Responsive */
+@media screen and (max-width: 976px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .navbar-toggler-icon {
+        color: white;
+    }
+}

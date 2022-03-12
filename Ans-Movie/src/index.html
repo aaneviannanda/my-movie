@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aan Movie | Aplikasi Pencarian Film Favorite</title>
+        <link rel="icon" href="./img/title.svg" />
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <nav-bar></nav-bar>
+        </header>
+        <main>
+            <!-- Component Welcome -->
+            <welcome-bar></welcome-bar>
+            <!-- End Welcome-->
+            <!-- Modal upcoming Movie -->
+            <div class="container upcoming text-center mt-5">
+                <h3 class="fw-bold">Upcoming Movie</h3>
+                <div class="row data-upcoming-movie row-cols-4 d-flex justify-content-around mt-5">
+                    <!-- Card Upcoming Movie -->
+                </div>
+            </div>
+            <!-- ENd Upcoming Movie -->
+            <!-- Modal Detail Movie -->
+            <div class="modal fade" id="movieDetailModal" tabindex="-1" aria-labelledby="movieDetailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h5 class="modal-title" id="movieDetailModalLabel">Detail Movie</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Detail Movie -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Detail Movie -->
+            <!-- Component Searching Movie -->
+            <search-bar></search-bar>
+            <!-- End Component search -->
+            <!-- Modal Detail Search Movie -->
+            <div class="modal fade" id="movieDetailModal" tabindex="-1" aria-labelledby="movieDetailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h5 class="modal-title" id="movieDetailModalLabel">Detail Movie</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body-search">
+                            <!-- Detail Movie -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Detail Search Movie -->
+            <!-- Favorite Movie -->
+            <div class="container favorite text-center" id="favoriteMovie">
+                <!-- Hasil Favorite -->
+            </div>
+            <!-- Modal Favorite Movie -->
+            <div class="modal fade" id="moviefavoriteModal" tabindex="-1" aria-labelledby="moviefavoriteModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h5 class="modal-title" id="moviefavoriteModalLabel">Tambah Ke favorite?</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Detail Movie -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="verifikasiVaforite" class="btn btn-success btn-sm" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
+        </main>
+        <!-- Footer -->
+        <footer class="page-footer font-small blue shadow">
+            <div class="footer-copyright text-center py-3">Copyright © 2022 | <a href="https://www.instagram.com/aanevian">aanevian</a></div>
+        </footer>
+        <!-- End Footer -->
+    </body>
+</html>
